@@ -3,9 +3,9 @@ const firebaseConfig = {
     databaseURL: "https://datingweb-cc1a4-default-rtdb.firebaseio.com/",
     apiKey: "AIzaSyBuEMJ0nO0mAmuKBCtxOLNM7H-_KwWLJjg",
     authDomain: "fir-e8d28.firebaseapp.com",
-    projectId: "datingweb-cc1a4",
+    projectId: "fir-e8d28",
     storageBucket: "fir-e8d28.appspot.com",
-    messagingSenderId: "436352687192",
+    messagingSenderId: "556919834771",
     appId: "1:556919834771:web:3db7e8b06f5fc5760ce566",
     measurementId: "G-KB6XL412SP"
 };
