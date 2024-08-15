@@ -1,3 +1,4 @@
+/* Gradient Background */
 .gradient-background {
   background: linear-gradient(300deg, #168aad, #1a759f, #52b69a);
   background-size: 180% 180%;
@@ -16,21 +17,89 @@
   }
 }
 
+.image-container {
+  width: 100%; /* Ensure it takes up the full available width */
+  max-width: 100%; /* Prevents restricting the container size */
+}
+
+.custom-img {
+  min-width: 500px; /* Adjust as needed */
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Icon Square */
 .icon-square {
   width: 3rem;
   height: 3rem;
   border-radius: 0.75rem;
 }
 
-.icon-round{
+/* Icon Round */
+.icon-round {
   height: 3rem;
   width: 5rem;
-  
-
 }
 
+/* Profile Image */
 .profile-img {
   height: 100px;
   width: 100px;
-  border-radius: 100%;
+  border-radius: 50%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjusting Gradient Background for Smaller Screens */
+  .gradient-background {
+    background-size: 200% 200%;
+    animation: gradient-animation 15s ease infinite;
+  }
+
+  /* Responsive Icon Square */
+  .icon-square {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+  }
+
+  /* Responsive Icon Round */
+  .icon-round {
+    height: 2.5rem;
+    width: 4rem;
+  }
+
+  /* Responsive Profile Image */
+  .profile-img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .gradient-background {
+    background-size: 220% 220%;
+    animation: gradient-animation 12s ease infinite;
+  }
+
+  /* Smaller Icon Square */
+  .icon-square {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  /* Smaller Icon Round */
+  .icon-round {
+    height: 2rem;
+    width: 3rem;
+  }
+
+  /* Smaller Profile Image */
+  .profile-img {
+    height: 60px;
+    width: 60px;
+  }
 }
